@@ -1,0 +1,38 @@
+/*
+Theme Name: wpresidence
+Template: wpresidence
+Author: WP Estate
+Version: 1.0
+Updated: 2015-01-25 18:19:31
+*/
+
+@charset "UTF-8";
+
+#gmap_wrapper .adv-search-1 {
+    background: rgba(255,255,255,0.2);
+    border: none;
+}
+
+#gmap-control {
+    display: none;
+}
+
+.featured_div {
+    max-width: 115px;
+}
+
+@media only screen and (min-width: 1023px) {
+    .home .single-content .vc_row.wpb_row:first-child {
+        position: relative;
+        margin-top: -265px;
+    }
+
+    .home .single-content .vc_row.wpb_row:nth-child(2) {
+        margin-top: 90px;
+    }
+
+    .home .single-content .advanced_search_shortcode {
+        background: rgba(255,255,255,0.2);
+        border: none;
+    }
+}

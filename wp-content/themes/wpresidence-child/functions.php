@@ -1,4 +1,9 @@
 <?php
+
+require_once 'libs/metaboxes.php';
+require_once 'libs/property.php';
+require_once 'libs/widgets/hot_widget.php';
+
 // Exit if accessed directly
 if ( !defined( 'ABSPATH' ) ) exit;
 
@@ -13,3 +18,5 @@ endif;
 add_action( 'wp_enqueue_scripts', 'chld_thm_cfg_parent_css' );
 
 // END ENQUEUE PARENT ACTION
+
+register_widget('Hot_Widget');

@@ -8063,7 +8063,7 @@ msgstr ""
 #: E:\!our theme
 #: wordpress\residence\!versions\1.14.3\wpresidence/templates/footer_buttons.php:9
 msgid "Use the form below to contact us!"
-msgstr ""
+msgstr "Воспользуйтесь формой для связи с нами"
 
 #: E:\!our theme
 #: wordpress\residence\!versions\1.14.3\wpresidence/templates/footer_buttons.php:17

@@ -21,6 +21,14 @@ Updated: 2015-01-25 18:19:31
     max-width: 115px;
 }
 
+.hot img {
+    max-height: 150px;
+}
+
+.hot .featured_title {
+    position: relative;
+}
+
 @media only screen and (min-width: 1023px) {
     .home .single-content .vc_row.wpb_row:first-child {
         position: relative;

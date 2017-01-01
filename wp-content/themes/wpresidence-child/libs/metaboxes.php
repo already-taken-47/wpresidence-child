@@ -108,7 +108,8 @@ if( !function_exists('estate_save_postdata') ):
             /**
              * Start rewrite
              */
-            'prop_hot'
+            'prop_hot',
+            'prop_hot_price'
             /**
              * End rewrite
              */

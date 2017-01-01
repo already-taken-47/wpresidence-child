@@ -79,6 +79,10 @@ class Hot_Widget extends WP_Widget {
             $link        =  get_permalink();
             $thumb_id    =  get_post_thumbnail_id($instance['prop_id']);
             $preview     =  wp_get_attachment_image_src($thumb_id, 'property_featured_sidebar');
+            $hot_price   =  get_post_meta(get_the_ID(), 'prop_hot_price', true);
+            $price       =  get_post_meta(get_the_ID(), 'property_price', true);
+            $currency       =   esc_html( get_option('wp_estate_currency_symbol', '') );
+            $where_currency =   esc_html( get_option('wp_estate_where_currency_symbol', '') );
             if($preview[0]==''){
                 $preview[0]= get_template_directory_uri().'/img/defaults/default_property_featured_sidebar.jpg';
             }
@@ -88,7 +92,18 @@ class Hot_Widget extends WP_Widget {
                                                 <a href="'.get_permalink().'"><img  src="'.$preview[0].'" class="img-responsive" alt="slider-thumb" /></a>
                                                                                     
                                         </div>';
-            $display    .=  '<div class="featured_title"><a href="'.$link.'" class="featured_title_link">'.get_the_title().'</a></div>';
+            $display    .=  '<div class="featured_title"><a href="'.$link.'" class="featured_title_link">'.get_the_title().'</a>';
+            $display .= ($price || $hot_price) ? '</br>' : '';
+
+            if ($hot_price) {
+                $display .= '&nbsp;<span class="hot-price-new">'. wpestate_show_price(get_the_ID(),$currency,$where_currency,1, true) .'</span>';
+            }
+
+            if ($price) {
+                $display .= wpestate_show_price(get_the_ID(),$currency,$where_currency,1);
+            }
+
+            $display    .= '</div>';
         endwhile;
 
         wp_reset_query();

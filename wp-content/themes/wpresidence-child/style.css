@@ -29,6 +29,15 @@ Updated: 2015-01-25 18:19:31
     position: relative;
 }
 
+.hot-price-new {
+    background-color: red;
+    border-radius: 5px;
+}
+
+.featured_sidebar_intern.hot .hot-price-new {
+    margin-right: 5px;
+}
+
 @media only screen and (min-width: 1023px) {
     .home .single-content .vc_row.wpb_row:first-child {
         position: relative;

@@ -108,6 +108,12 @@ if( !function_exists('estate_box') ):
         print ' />
             <label for="prop_hot">'.__('Make it Hot Property','wpestate').'</label>
         </p>
+        
+        <p class="meta-options">
+            <label for="prop_hot_price">'.__('Hot price: ','wpestate').'</label><br />
+            <input type="text" id="prop_hot_price" size="40" name="prop_hot_price"
+             value="' . esc_html(get_post_meta($mypost, 'prop_hot_price', true)) . '">
+            </p>
     </td>
 
       <td align="left" valign="top">          

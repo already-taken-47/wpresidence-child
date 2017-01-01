@@ -1,6 +1,7 @@
 <?php
 
 require_once 'libs/metaboxes.php';
+require_once 'libs/help_functions.php';
 require_once 'libs/property.php';
 require_once 'libs/widgets/hot_widget.php';
 

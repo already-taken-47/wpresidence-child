@@ -261,7 +261,7 @@ if( !function_exists('wpestate_strip_excerpt_by_char') ):
         $return_string  = '';
         $return_string  =  mb_substr( $text,0,$chars_no); 
             if(mb_strlen($text)>$chars_no){
-                $return_string.= ' <a href="'.get_permalink($post_id).'" class="unit_more_x">[more]</a>';   
+                $return_string.= ' <a href="'.get_permalink($post_id).'" class="unit_more_x">...</a>';
             } 
         return $return_string;
         }
@@ -273,7 +273,7 @@ if( !function_exists('wpestate_strip_excerpt_by_char_places') ):
         $return_string  = '';
         $return_string  =  mb_substr( $text,0,$chars_no); 
             if(mb_strlen($text)>$chars_no){
-                $return_string.= ' <a href="'.$link.'" class="unit_more_x">[more]</a>';   
+                $return_string.= ' <a href="'.$link.'" class="unit_more_x">...</a>';
             } 
         return $return_string;
         }

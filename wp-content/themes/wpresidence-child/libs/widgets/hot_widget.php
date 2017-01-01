@@ -96,11 +96,15 @@ class Hot_Widget extends WP_Widget {
             $display .= ($price || $hot_price) ? '</br>' : '';
 
             if ($hot_price) {
-                $display .= '&nbsp;<span class="hot-price-new">'. wpestate_show_price(get_the_ID(),$currency,$where_currency,1, true) .'</span>';
+                $display .= '&nbsp;<span class="hot-price-new">'.
+                    wpestate_show_price(get_the_ID(),$currency,$where_currency,1, true) .
+                    '</span>';
             }
 
             if ($price) {
-                $display .= wpestate_show_price(get_the_ID(),$currency,$where_currency,1);
+                $display .= '<span class="hot-price-old">' .
+                    wpestate_show_price(get_the_ID(),$currency,$where_currency,1) .
+                    '</span>';
             }
 
             $display    .= '</div>';

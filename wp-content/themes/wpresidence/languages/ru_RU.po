@@ -459,7 +459,7 @@ msgstr "добавить в избранное"
 #: wordpress\residence\!versions\1.14.3\wpresidence/single-estate_property.php:55
 #: wordpress\residence\!versions\1.14.3\wpresidence/libs/css_js_include.php:545
 msgid "favorite"
-msgstr "фаворит"
+msgstr "избранное"
 
 #: E:\!our theme
 #: wordpress\residence\!versions\1.14.3\wpresidence/single-estate_property.php:114

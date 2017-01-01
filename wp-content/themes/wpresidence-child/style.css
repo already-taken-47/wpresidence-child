@@ -34,6 +34,10 @@ Updated: 2015-01-25 18:19:31
     border-radius: 5px;
 }
 
+.hot-price-old {
+    text-decoration: line-through;
+}
+
 .featured_sidebar_intern.hot .hot-price-new {
     margin-right: 5px;
 }
